@@ -1,0 +1,33 @@
+.btn {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: @white;
+    background: none;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.12em 2.05em;
+    margin: 0;
+    vertical-align: top;
+    border-radius: 3em;
+    line-height: 1.1;
+
+    transition: background-color .2s ease;
+    &--red {
+        .button-mix(@red);
+    }
+    &--blue {
+        .button-mix(@blue);
+    }
+    &--rounded {
+        border-radius: 0.4em;
+    }
+    &--sm {
+        padding: 0.71em 1.25em;
+    }
+    &:hover {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,24 @@
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100% - @sidebarWidth);
+    background-color: #0D0D0D;
+    z-index: @z-index-header;
+
+    box-shadow: 0 5px 22px fade(@black, 25%);
+
+    display: flex;
+
+    @media (max-width: @tablet-bp) {
+        width: 100%;
+    }
+}
+.header__left {
+    width: 60%;
+}
+.header__right {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+}

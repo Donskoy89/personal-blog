@@ -1,0 +1,55 @@
+@import 'venders/reset.less';
+@import 'vars.less';
+@import 'mixin.less';
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #181818;
+    color: @white;
+    font-size: 1.4rem;
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    line-height: 1.5;
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+img {
+    display: block;
+}
+
+@import 'blocks/page.less';
+@import 'blocks/main.less';
+@import 'blocks/container.less';
+@import 'blocks/embed.less';
+@import 'blocks/header.less';
+@import 'blocks/nav.less';
+@import 'blocks/subnav.less';
+@import 'blocks/search.less';
+@import 'blocks/sidebar.less';
+@import 'blocks/profile.less';
+@import 'blocks/social.less';
+@import 'blocks/btn.less';
+@import 'blocks/stories.less';
+@import 'blocks/add-post.less';
+@import 'blocks/post.less';
+@import 'blocks/pagination.less';
+@import 'blocks/related.less';
+@import 'blocks/comments.less';
+@import 'blocks/form.less';
+@import 'blocks/work.less';
+@import 'blocks/tags.less';
+@import 'blocks/cabinet.less';
+@import 'blocks/modal.less';

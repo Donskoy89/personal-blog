@@ -1,0 +1,15 @@
+.button-mix(@color) {
+    background-color: @color;
+    box-shadow: 0 7px 17px -10px fade(@color, 20%);
+    &:hover,
+    &:focus {
+        background-color: darken(@color, 10%);
+    }
+}
+.post-frame() {
+    background-color: @primery;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px fade(@black, 35%);
+    margin-bottom: 3rem;
+    overflow: hidden;
+}
